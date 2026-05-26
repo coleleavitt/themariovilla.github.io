@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://themariovilla.github.io/sitemap.xml
