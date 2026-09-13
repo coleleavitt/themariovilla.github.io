@@ -371,3 +371,30 @@ footer { background: var(--color-ink); color: var(--color-ink-text); padding: 3r
   font-style: normal; font-size: .78rem; font-weight: 700;
   letter-spacing: .16em; text-transform: uppercase; color: var(--color-accent);
 }
+
+/* ---------- shop ---------- */
+.shop-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(215px, 1fr)); gap: 1.25rem; }
+.shop-card {
+  display: flex; flex-direction: column; gap: .5rem;
+  background: var(--color-surface); border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg); padding: 1.1rem; transition: border-color .2s ease;
+}
+.shop-card:hover { border-color: var(--color-accent); }
+.shop-card:hover h3 { color: var(--color-accent); }
+.shop-tag {
+  align-self: flex-start; font-size: .66rem; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--color-accent);
+}
+.shop-card img {
+  width: 100%; aspect-ratio: 1; object-fit: contain;
+  background: #fff; border-radius: var(--radius-md); border: 1px solid var(--color-border);
+}
+.shop-noimg {
+  width: 100%; aspect-ratio: 1; display: flex; align-items: center; justify-content: center;
+  background: var(--color-surface-2); border-radius: var(--radius-md); border: 1px solid var(--color-border);
+  font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--color-text-muted);
+}
+.shop-card h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; margin: .4rem 0 0; transition: color .15s ease; }
+.shop-card p { font-size: var(--text-sm); }
+.shop-price { margin-top: auto; padding-top: .6rem; font-weight: 700; color: var(--color-text); font-size: var(--text-sm); }
+.shop-price.muted { color: var(--color-text-muted); font-weight: 500; }
