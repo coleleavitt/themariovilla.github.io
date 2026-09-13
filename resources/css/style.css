@@ -303,3 +303,8 @@ footer { padding: 2.5rem 0 3rem; border-top: 1px solid var(--color-border); marg
 /* Top performing Instagram posts */
 .insta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.25rem; align-items: start; }
 .insta-grid .instagram-media { margin: 0 !important; width: 100% !important; min-width: 0 !important; }
+
+/* Mixed highlights: top posts + brand deals masonry */
+.mix-grid { columns: 3 300px; column-gap: 1.25rem; }
+.mix-grid > * { break-inside: avoid; margin-bottom: 1.25rem; }
+.mix-grid .instagram-media { margin: 0 0 1.25rem !important; width: 100% !important; min-width: 0 !important; }
