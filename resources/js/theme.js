@@ -18,3 +18,17 @@
     btn.setAttribute('aria-pressed', String(theme === 'dark'));
   });
 })();
+
+// Scroll reveal: JS adds .reveal so content still shows with JS disabled.
+(function () {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var els = document.querySelectorAll('main section, .deal-card, .gallery figure, .timeline li');
+  if (!('IntersectionObserver' in window)) return;
+  els.forEach(function (el) { el.classList.add('reveal'); });
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  els.forEach(function (el) { io.observe(el); });
+})();
