@@ -55,6 +55,9 @@
 
   <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=boska@400,500,700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./resources/css/style.css" />
 </head>
 <body>
@@ -77,7 +80,7 @@
         <a href="#collaborators">Collaborators</a>
         <a href="#resume">Resume</a>
         <a href="#media-kit">Media Kit</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact" class="nav-cta">Let&apos;s Talk</a>
       </nav>
       <button class="toggle" type="button" data-theme-toggle aria-label="Switch color theme">◐</button>
     </div>
@@ -86,14 +89,12 @@
   <main class="container" id="top">
     <section class="hero">
       <div>
-        <span class="eyebrow">Scottsdale, AZ · Creator & Marketer</span>
-        <h1>Mario Villa</h1>
-        <p class="lead">Content creator and digital marketing specialist building brands across social, search, and AI.</p>
-        <p>Active on Instagram and TikTok since 2016 with a combined 90K+ following, Mario pairs creator-side storytelling with agency-grade performance marketing — SEM, paid social, and content strategy — and is now pursuing an M.S. in AI in Business at Arizona State University ('27).</p>
+        <span class="eyebrow">Hi, I&apos;m Mario</span>
+        <h1>Lifestyle content that inspires you to <em>explore.</em></h1>
+        <p>Active on Instagram and TikTok since 2016 with a combined 90K+ following, I pair creator side storytelling with agency grade performance marketing, and I am now pursuing an M.S. in AI in Business at Arizona State University (&apos;27).</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="#contact">Get in touch</a>
-          <a class="btn btn-secondary" href="https://www.linkedin.com/in/mario-villa/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a class="btn btn-secondary" href="#resume">Resume</a>
+          <a class="btn btn-primary" href="#work">View my work</a>
+          <a class="btn btn-secondary" href="#contact">Get in touch</a>
         </div>
       </div>
       <div class="hero-card portrait-wrap">
@@ -103,14 +104,32 @@
         <div class="stats">
           <div class="stat"><strong>70K+</strong><span>Instagram followers</span></div>
           <div class="stat"><strong>20K+</strong><span>TikTok followers</span></div>
-          <div class="stat"><strong>9 yrs</strong><span>Creating content</span></div>
+          <div class="stat"><strong>10 yrs</strong><span>Creating content</span></div>
           <div class="stat"><strong>ASU '27</strong><span>M.S. AI in Business</span></div>
+        </div>
+      </div>
+      <aside class="hero-side" aria-label="Quick facts">
+        <div class="side-card"><span class="side-label">Status</span><p>Available for partnerships</p></div>
+        <div class="side-card"><span class="side-label">Based in</span><p>Scottsdale, AZ</p></div>
+        <div class="side-card"><span class="side-label">Experience</span><p>10 yrs creating content</p></div>
+      </aside>
+    </section>
+
+    <section class="pillars-band" aria-label="Content pillars">
+      <div class="container">
+        <span class="kicker light">What I create</span>
+        <div class="pillars">
+          <div class="pillar"><h3>Travel</h3><p>Destination storytelling and trip features.</p></div>
+          <div class="pillar"><h3>Hotels</h3><p>Partner stays and property spotlights.</p></div>
+          <div class="pillar"><h3>Fashion</h3><p>Seasonal outfits and style content.</p></div>
+          <div class="pillar"><h3>Lifestyle</h3><p>Dining, culture, and everyday life.</p></div>
         </div>
       </div>
     </section>
 
     <section id="about">
-      <h2>About Me</h2>
+      <span class="kicker">About</span>
+      <h2>About <em>me.</em></h2>
       <div class="card about-card">
         <p>I am Mario Villa, a lifestyle creator and digital marketing specialist based in Scottsdale, Arizona. I have been creating content since 2016, building a combined audience of more than 90K followers across Instagram and TikTok with content covering travel, hotels, fashion, and everyday life.</p>
         <p>Before creating full time, I spent six years in B2B digital marketing at Quisitive running paid search and paid social campaigns, with earlier experience at Collab, SoulPancake, Thoughtful Media Group, and AwesomenessTV. That combination of creator instinct and marketing discipline shapes every brand partnership I take on.</p>
@@ -125,7 +144,8 @@
     </section>
 
     <section id="experience">
-      <h2>Experience</h2>
+      <span class="kicker">Background</span>
+      <h2>My <em>experience.</em></h2>
       <p class="section-intro">Nearly a decade spanning the creator economy, multi-channel networks, and B2B digital marketing.</p>
       <ul class="timeline">
         <li>
@@ -162,22 +182,27 @@
     </section>
 
     <section id="work">
-      <h2>Selected Work</h2>
+      <span class="kicker">Portfolio</span>
+      <h2>Selected <em>work.</em></h2>
       <p class="section-intro">Campaign frames and creator highlights.</p>
       <div class="work-grid">
         <figure class="work-tile work-tile-lg">
+          <span class="work-num">01</span>
           <img src="./resources/images/simon-malls-collab.jpg" alt="Simon Malls collaboration campaign" loading="lazy" />
           <figcaption><span class="work-tag">Brand collab</span>Simon Malls</figcaption>
         </figure>
         <figure class="work-tile">
+          <span class="work-num">02</span>
           <img src="./resources/images/national-outlet-day.jpg" alt="National Outlet Shopping Day campaign" loading="lazy" />
           <figcaption><span class="work-tag">Campaign</span>National Outlet Shopping Day</figcaption>
         </figure>
         <figure class="work-tile">
+          <span class="work-num">03</span>
           <img src="./resources/images/gallery-1.jpg" alt="Mario Villa creator content feature" loading="lazy" />
           <figcaption><span class="work-tag">Feature</span>Creator spotlight</figcaption>
         </figure>
         <figure class="work-tile work-tile-wide">
+          <span class="work-num">04</span>
           <img src="./resources/images/gallery-2.jpg" alt="Mario Villa lifestyle and hospitality content" loading="lazy" />
           <figcaption><span class="work-tag">Content</span>Lifestyle &amp; hospitality</figcaption>
         </figure>
@@ -185,7 +210,8 @@
     </section>
 
     <section id="highlights">
-      <h2>Top Posts &amp; Brand Deals</h2>
+      <span class="kicker">Proof of work</span>
+      <h2>Top posts &amp; <em>brand deals.</em></h2>
       <p class="section-intro">His best performing Instagram content, mixed with the brand partnerships behind it.</p>
       <div class="mix-grid">
         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Cr4fDgApbPZ/" data-instgrm-version="14"></blockquote>
@@ -291,11 +317,12 @@
 
     <section id="bio">
       <h2>In their words</h2>
-      <p class="quote">“Creator-side storytelling meets agency-grade performance marketing — and now, AI in business.”</p>
+      <p class="quote">“Creator side storytelling meets agency grade performance marketing, and now AI in business.”</p>
     </section>
 
     <section id="articles">
-      <h2>Articles</h2>
+      <span class="kicker">LinkedIn articles</span>
+      <h2>Latest <em>writing.</em></h2>
       <p class="section-intro">Long form writing on restaurants, travel, and the creator economy.</p>
       <ul class="article-list">
         <li>
@@ -334,7 +361,8 @@
     </section>
 
     <section id="collaborators">
-      <h2>Collaborators &amp; Mentors</h2>
+      <span class="kicker">People</span>
+      <h2>Collaborators &amp; <em>mentors.</em></h2>
       <p class="section-intro">Creators and partners Mario has worked alongside across content, strategy, and the business side of the creator economy.</p>
       <div class="grid-3">
         <article class="collab-card card">
@@ -372,7 +400,8 @@
     </section>
 
     <section id="resume">
-      <h2>Resume</h2>
+      <span class="kicker">CV</span>
+      <h2>My <em>resume.</em></h2>
       <div class="card">
         <p>Mario&apos;s full resume covers Quisitive and Collab experience, creator collaborations, and M.S. AI in Business studies at Arizona State University.</p>
         <div class="cta-row">
@@ -386,7 +415,8 @@
     </section>
 
     <section id="media-kit">
-      <h2>Media Kit</h2>
+      <span class="kicker">Press</span>
+      <h2>Media <em>kit.</em></h2>
       <div class="card">
         <p>Mario&apos;s creator media kit with audience stats, past partnerships, and collaboration formats. Preview it below or download the PDF.</p>
         <div class="cta-row">
@@ -400,7 +430,8 @@
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
+      <span class="kicker">Contact</span>
+      <h2>Let&apos;s <em>talk.</em></h2>
       <div class="card">
         <ul class="contact-list">
           <li><strong>Location:</strong> Scottsdale, AZ</li>
