@@ -270,3 +270,14 @@ footer { padding: 2.5rem 0 3rem; border-top: 1px solid var(--color-border); marg
 /* TikTok cards in the highlights mix */
 .tiktok-card { margin: 0 0 1.25rem; break-inside: avoid; }
 .mix-grid .tiktok-embed { margin: 0 !important; max-width: 100% !important; min-width: 0 !important; }
+
+/* LinkedIn articles */
+.article-list { list-style: none; display: grid; gap: 0; }
+.article-list li { border-bottom: 1px solid var(--color-border); }
+.article-list li:first-child { border-top: 1px solid var(--color-border); }
+.article-list a { display: block; padding: 1.6rem 0; }
+.article-date { font-size: var(--text-sm); color: var(--color-text-muted); font-weight: 500; }
+.article-list h3 { font-size: var(--text-lg); margin: .35rem 0 .45rem; letter-spacing: -0.015em; transition: color .15s ease; }
+.article-list a:hover h3 { color: var(--color-primary); }
+.article-list p { font-size: var(--text-sm); }
+.article-link { display: inline-block; margin-top: .65rem; font-size: var(--text-sm); font-weight: 600; color: var(--color-primary); }
