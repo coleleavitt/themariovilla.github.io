@@ -358,3 +358,16 @@ footer { background: var(--color-ink); color: var(--color-ink-text); padding: 3r
 .steps span { font-size: var(--text-sm); color: var(--color-text-muted); }
 #work-with-me .cta-row { margin-top: var(--space-8); }
 @media (max-width: 820px) { .steps { grid-template-columns: 1fr; } }
+
+/* ---------- testimonial ---------- */
+#kind-words { text-align: center; }
+.testimonial { max-width: 34ch; margin-inline: auto; }
+.testimonial p {
+  font-family: var(--font-display); font-style: italic;
+  font-size: clamp(1.4rem, 1.05rem + 1.8vw, 2.1rem);
+  line-height: 1.4; color: var(--color-text); margin-bottom: var(--space-4);
+}
+.testimonial cite {
+  font-style: normal; font-size: .78rem; font-weight: 700;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--color-accent);
+}
