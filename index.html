@@ -77,25 +77,22 @@
         </svg>
         <span>Mario Villa</span>
       </a>
-      <nav class="nav-links" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#highlights">Highlights</a>
-        <a href="#articles">Articles</a>
-        <a href="#stories">Stories</a>
-        <a href="#collaborators">Collaborators</a>
-        <a href="#work-with-me">Work With Me</a>
-        <a href="#shop">Shop</a>
-        <a href="#resume">Resume</a>
-        <a href="#media-kit">Media Kit</a>
-        <a href="#contact" class="nav-cta">Let&apos;s Talk</a>
-      </nav>
       <button class="toggle" type="button" data-theme-toggle aria-label="Switch color theme">◐</button>
+    </div>
+    <div class="tabbar" role="tablist" aria-label="Site sections">
+      <div class="container tabbar-scroll">
+        <button type="button" class="tab-btn is-active" data-tab="home" role="tab" aria-selected="true">Home</button>
+        <button type="button" class="tab-btn" data-tab="highlights" role="tab" aria-selected="false">Highlights</button>
+        <button type="button" class="tab-btn" data-tab="experience" role="tab" aria-selected="false">Experience</button>
+        <button type="button" class="tab-btn" data-tab="writing" role="tab" aria-selected="false">Writing</button>
+        <button type="button" class="tab-btn" data-tab="shop" role="tab" aria-selected="false">Shop</button>
+        <button type="button" class="tab-btn tab-cta" data-tab="contact" role="tab" aria-selected="false">Let&rsquo;s Talk</button>
+      </div>
     </div>
   </header>
 
   <main class="container" id="top">
-    <section class="hero">
+    <section class="hero is-active" data-tab="home">
       <div>
         <span class="eyebrow">Hi, I&apos;m Mario</span>
         <h1>Mario Villa: lifestyle content that inspires you to <em>explore.</em></h1>
@@ -123,7 +120,7 @@
       </aside>
     </section>
 
-    <section class="pillars-band" aria-label="Content pillars">
+    <section class="pillars-band is-active" data-tab="home" aria-label="Content pillars">
       <div class="container">
         <span class="kicker light">What I create</span>
         <div class="pillars">
@@ -135,7 +132,7 @@
       </div>
     </section>
 
-    <section id="about">
+    <section id="about" data-tab="home" class="is-active">
       <span class="kicker">About</span>
       <h2>About <em>me.</em></h2>
       <div class="card about-card">
@@ -151,7 +148,7 @@
       </div>
     </section>
 
-    <section id="experience">
+    <section id="experience" data-tab="experience">
       <span class="kicker">Background</span>
       <h2>My <em>experience.</em></h2>
       <p class="section-intro">Nearly a decade spanning the creator economy, multi-channel networks, and B2B digital marketing.</p>
@@ -201,7 +198,7 @@
       </ul>
     </section>
 
-    <section id="highlights">
+    <section id="highlights" data-tab="highlights">
       <span class="kicker">Proof of work</span>
       <h2>Top posts &amp; <em>brand deals.</em></h2>
       <p class="section-intro">His best performing Instagram content, mixed with the brand partnerships behind it.</p>
@@ -308,7 +305,7 @@
       <script async src="https://www.tiktok.com/embed.js"></script>
     </section>
 
-    <section id="kind-words">
+    <section id="kind-words" data-tab="home" class="is-active">
       <span class="kicker">Kind words</span>
       <blockquote class="testimonial">
         <p>&ldquo;Your content looks fantastic, and we love your focus on style, travel, and culture.&rdquo;</p>
@@ -317,7 +314,7 @@
       <p class="quote">&ldquo;Creator side storytelling meets agency grade performance marketing, and now AI in business.&rdquo;</p>
     </section>
 
-    <section id="articles">
+    <section id="articles" data-tab="writing">
       <span class="kicker">LinkedIn articles</span>
       <h2>Latest <em>writing.</em></h2>
       <p class="section-intro">Long form writing on restaurants, travel, and the creator economy.</p>
@@ -357,7 +354,7 @@
       </ul>
     </section>
 
-    <section id="stories">
+    <section id="stories" data-tab="writing">
       <span class="kicker">Personal stories</span>
       <h2>Stories from <em>my life.</em></h2>
       <p class="section-intro">Personal essays on school, work, travel, and building a creative business.</p>
@@ -421,7 +418,7 @@
       </ul>
     </section>
 
-    <section id="collaborators">
+    <section id="collaborators" data-tab="experience">
       <span class="kicker">People</span>
       <h2>Collaborators &amp; <em>mentors.</em></h2>
       <p class="section-intro">Creators and partners Mario has worked alongside across content, strategy, and the business side of the creator economy.</p>
@@ -469,7 +466,7 @@
       </div>
     </section>
 
-    <section id="work-with-me">
+    <section id="work-with-me" data-tab="contact">
       <span class="kicker">Services</span>
       <h2>Let&apos;s work <em>together.</em></h2>
       <p class="section-intro">I partner with hotels, fashion labels, and lifestyle brands to create content people actually stop for. Here is what I offer and how we get started.</p>
@@ -507,7 +504,7 @@
       </div>
     </section>
 
-    <section id="shop">
+    <section id="shop" data-tab="shop">
       <span class="kicker">Shop</span>
       <h2>My <em>favorites.</em></h2>
       <p class="section-intro">The everyday essentials I actually use, from gym gear to grooming. Links go to Amazon.</p>
@@ -585,7 +582,7 @@
       </div>
     </section>
 
-    <section id="resume">
+    <section id="resume" data-tab="contact">
       <span class="kicker">CV</span>
       <h2>My <em>resume.</em></h2>
       <div class="card">
@@ -597,7 +594,7 @@
       </div>
     </section>
 
-    <section id="media-kit">
+    <section id="media-kit" data-tab="contact">
       <span class="kicker">Press</span>
       <h2>Media <em>kit.</em></h2>
       <div class="card">
@@ -609,7 +606,7 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" data-tab="contact">
       <span class="kicker">Contact</span>
       <h2>Let&apos;s <em>talk.</em></h2>
       <div class="card">
@@ -633,12 +630,13 @@
       <p>© <span id="year">2026</span> Mario Villa LLC · Scottsdale, AZ</p>
       <ul class="footer-links">
         <li><a href="https://www.linkedin.com/in/mario-villa/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-        <li><a href="#about">Top</a></li>
+        <li><a href="#top">Top</a></li>
       </ul>
     </div>
   </footer>
 
   <script src="./resources/js/theme.js"></script>
+  <script src="./resources/js/tabs.js"></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
