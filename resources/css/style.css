@@ -85,7 +85,7 @@ header {
 .toggle:hover { border-color: var(--color-text-muted); }
 
 /* ---------- type & sections ---------- */
-main section { padding: var(--space-24) 0; scroll-margin-top: 5rem; }
+main section { padding: var(--space-12) 0; scroll-margin-top: 5rem; }
 .kicker {
   display: block; font-size: .75rem; font-weight: 700;
   letter-spacing: .2em; text-transform: uppercase;
@@ -325,7 +325,7 @@ footer { background: var(--color-ink); color: var(--color-ink-text); padding: 3r
   .hero-side { grid-template-columns: 1fr; }
   .nav-links { display: none; }
   h1 { max-width: 18ch; }
-  main section { padding: var(--space-16) 0; }
+  main section { padding: var(--space-8) 0; }
   .hero-card { max-width: 340px; margin-inline: auto; }
   .stats { grid-template-columns: 1fr 1fr; }
   .deal-grid { grid-template-columns: 1fr 1fr; }
