@@ -281,13 +281,13 @@ p { font-size: var(--text-base); color: var(--color-text-muted); max-width: 62ch
 }
 
 /* ---------- quote ---------- */
-#bio { text-align: center; }
-#bio .quote {
+#kind-words { text-align: center; }
+#kind-words .quote {
   font-family: var(--font-display); font-style: italic;
-  font-size: clamp(1.5rem, 1.1rem + 2vw, 2.4rem);
-  max-width: 30ch; margin-inline: auto; color: var(--color-text); line-height: 1.35;
+  font-size: clamp(1.1rem, .95rem + 1vw, 1.5rem);
+  max-width: 34ch; margin-inline: auto; color: var(--color-text-muted); line-height: 1.4;
+  margin-top: var(--space-6);
 }
-#bio h2 { max-width: none; }
 
 /* ---------- articles ---------- */
 .article-list { list-style: none; display: grid; gap: 0; }
