@@ -68,15 +68,32 @@ header {
 .nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 0; gap: 1rem; }
 .brand { display: flex; align-items: center; gap: .7rem; font-family: var(--font-display); font-weight: 600; font-size: 1.35rem; letter-spacing: 0.01em; }
 .brand-mark { width: 32px; height: 32px; color: var(--color-text); }
-.nav-links { display: flex; gap: .1rem; font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; align-items: center; }
-.nav-links a { padding: .55rem .7rem; border-radius: var(--radius-sm); color: var(--color-text-muted); }
-.nav-links a:hover { color: var(--color-text); }
-.nav-cta {
-  background: var(--color-ink) !important; color: var(--color-ink-text) !important;
-  border-radius: var(--radius-full) !important; padding: .65rem 1.3rem !important;
-  margin-left: .5rem;
+/* ---------- tabs ---------- */
+.tabbar { border-top: 1px solid var(--color-border); }
+.tabbar-scroll { display: flex; align-items: center; gap: .1rem; overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none; padding: .3rem 0; }
+.tabbar-scroll::-webkit-scrollbar { display: none; }
+.tab-btn {
+  flex: 0 0 auto; appearance: none; background: none; border: 0; cursor: pointer;
+  font-family: inherit; font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--color-text-muted); padding: .55rem .8rem; border-radius: var(--radius-sm);
+  box-shadow: inset 0 -2px 0 transparent;
 }
-.nav-cta:hover { color: var(--color-ink-text) !important; opacity: .85; }
+.tab-btn:hover { color: var(--color-text); }
+.tab-btn.is-active { color: var(--color-text); box-shadow: inset 0 -2px 0 var(--color-accent); border-radius: 0; }
+.tab-btn.tab-cta {
+  background: var(--color-ink); color: var(--color-ink-text);
+  border-radius: var(--radius-full); padding: .55rem 1.2rem; margin-left: .5rem; box-shadow: none;
+}
+.tab-btn.tab-cta:hover { color: var(--color-ink-text); opacity: .85; }
+.tab-btn.tab-cta.is-active { box-shadow: none; }
+
+/* one tab visible at a time; inactive sections stay laid out (so embeds size
+   correctly) but are clipped, transparent to pointer, and add no height */
+#top { position: relative; }
+#top > section[data-tab]:not(.is-active) {
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 0; overflow: hidden; visibility: hidden; pointer-events: none;
+}
 .toggle {
   border: 1px solid var(--color-border); border-radius: var(--radius-full);
   padding: .55rem .8rem; min-width: 44px; min-height: 44px;
@@ -323,7 +340,6 @@ footer { background: var(--color-ink); color: var(--color-ink-text); padding: 3r
   .work-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 170px; }
   .hero, .grid-2, .grid-3 { grid-template-columns: 1fr; }
   .hero-side { grid-template-columns: 1fr; }
-  .nav-links { display: none; }
   h1 { max-width: 18ch; }
   main section { padding: var(--space-8) 0; }
   .hero-card { max-width: 340px; margin-inline: auto; }
