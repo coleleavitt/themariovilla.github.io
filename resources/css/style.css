@@ -407,3 +407,12 @@ footer { background: var(--color-ink); color: var(--color-ink-text); padding: 3r
   .shop-card p { font-size: .8rem; }
   .shop-price { font-size: .8rem; }
 }
+
+/* ---------- AwesomenessTV videos ---------- */
+.atv-videos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: .9rem; }
+.video-link { display: block; text-decoration: none; color: inherit; background: var(--color-surface-2, #fff); border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; transition: transform .15s ease, box-shadow .15s ease; }
+.video-link:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+.video-link img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
+.video-link span { display: block; padding: .7rem .9rem .85rem; font-size: var(--text-sm); font-weight: 600; }
+.video-link small { display: block; padding: 0 .9rem .85rem; font-size: .78rem; color: var(--color-text-muted); margin-top: -.5rem; }
+@media (max-width: 640px) { .atv-videos { grid-template-columns: 1fr; } }
