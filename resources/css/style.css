@@ -348,7 +348,7 @@ footer { background: var(--color-ink); color: var(--color-ink-text); padding: 3r
 .mix-grid { columns: 3 300px; column-gap: 1.25rem; }
 .mix-grid > * { break-inside: avoid; margin-bottom: 1.25rem; }
 .mix-grid .instagram-media { margin: 0 0 1.25rem !important; width: 100% !important; min-width: 0 !important; }
-.tiktok-card { margin: 0 0 1.25rem; break-inside: avoid; }
+.tiktok-card { margin: 0 auto 1.25rem; break-inside: avoid; max-width: 270px; }
 .mix-grid .tiktok-embed { margin: 0 !important; max-width: 100% !important; min-width: 0 !important; }
 
 /* ---------- work with me steps ---------- */
