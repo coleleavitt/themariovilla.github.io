@@ -260,30 +260,35 @@
           <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@themariovilla/video/7406064370238688558" data-video-id="7406064370238688558" style="max-width: 605px; min-width: 325px;">
             <section></section>
           </blockquote>
+          <a class="tiktok-fallback" href="https://www.tiktok.com/@themariovilla/video/7406064370238688558" target="_blank" rel="noopener" hidden>Watch on TikTok</a>
         </figure>
         <figure class="tiktok-card">
           <span class="deal-tag">Simon Malls · Sponsored TikTok</span>
           <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@themariovilla/video/7332954051283275054" data-video-id="7332954051283275054" style="max-width: 605px; min-width: 325px;">
             <section></section>
           </blockquote>
+          <a class="tiktok-fallback" href="https://www.tiktok.com/@themariovilla/video/7332954051283275054" target="_blank" rel="noopener" hidden>Watch on TikTok</a>
         </figure>
         <figure class="tiktok-card">
           <span class="deal-tag">Simon Malls · TikTok</span>
           <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@themariovilla/video/7374485970793614635" data-video-id="7374485970793614635" style="max-width: 605px; min-width: 325px;">
             <section></section>
           </blockquote>
+          <a class="tiktok-fallback" href="https://www.tiktok.com/@themariovilla/video/7374485970793614635" target="_blank" rel="noopener" hidden>Watch on TikTok</a>
         </figure>
         <figure class="tiktok-card">
           <span class="deal-tag">PSA · TikTok</span>
           <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@themariovilla/video/7497412807613336862" data-video-id="7497412807613336862" style="max-width: 605px; min-width: 325px;">
             <section></section>
           </blockquote>
+          <a class="tiktok-fallback" href="https://www.tiktok.com/@themariovilla/video/7497412807613336862" target="_blank" rel="noopener" hidden>Watch on TikTok</a>
         </figure>
         <figure class="tiktok-card">
           <span class="deal-tag">TikTok</span>
           <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@themariovilla/video/7446291144280902943" data-video-id="7446291144280902943" style="max-width: 605px; min-width: 325px;">
             <section></section>
           </blockquote>
+          <a class="tiktok-fallback" href="https://www.tiktok.com/@themariovilla/video/7446291144280902943" target="_blank" rel="noopener" hidden>Watch on TikTok</a>
         </figure>
       </div>
       <h3 class="also-with">Also partnered with</h3>
@@ -306,6 +311,18 @@
       </ul>
       <script async src="https://www.instagram.com/embed.js"></script>
       <script async src="https://www.tiktok.com/embed.js"></script>
+      <script>
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          document.querySelectorAll('.tiktok-card .tiktok-embed').forEach(function (bq) {
+            if (!bq.querySelector('iframe')) {
+              var fb = bq.parentElement.querySelector('.tiktok-fallback');
+              if (fb) fb.hidden = false;
+            }
+          });
+        }, 8000);
+      });
+      </script>
     </section>
 
     <section id="kind-words">
