@@ -136,6 +136,14 @@
   cursor: pointer;
 }
 @media (max-width: 480px) {
-  #ai-mode-fab { right: 1rem; bottom: 1rem; }
-  #ai-mode-panel { right: 1rem; bottom: 4.5rem; }
+  #ai-mode-fab { right: 1rem; bottom: 1rem; left: 1rem; justify-content: center; }
+  #ai-mode-panel {
+    right: 0.75rem;
+    left: 0.75rem;
+    bottom: 4.75rem;
+    width: auto;
+    height: 70vh;
+    height: 70dvh;
+  }
+  #ai-mode-input { font-size: 16px; }
 }
