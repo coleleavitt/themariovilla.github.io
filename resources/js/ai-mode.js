@@ -11,6 +11,10 @@
       answer: 'Mario Villa is an American digital content creator and performance marketer based primarily in Scottsdale, Arizona, with operations spanning across California and Texas. He is recognized for blending creator-side lifestyle storytelling with agency-grade performance marketing.'
     },
     {
+      keys: ['quisitive', 'work history', 'career', 'job', 'employer', 'emperform', 'social media manager', 'catapult'],
+      answer: 'Mario worked as a Digital Marketing Specialist at Quisitive from 2018 to 2024, and previously managed social media accounts for Quisitive, Catapult Systems, Board, and emPerform. You can find each company on LinkedIn from the Experience section of this site.'
+    },
+    {
       keys: ['follower', 'audience', 'how many', 'reach', 'community', 'social reach', 'popular'],
       answer: 'Mario has built a cross-platform audience of over 100,000 followers across major networks, focusing heavily on lifestyle, travel, fashion, fitness, and food content: Instagram @themariovilla.a (over 72,000 followers) and TikTok @themariovilla (over 23,000 followers and 58,000+ likes).'
     },
