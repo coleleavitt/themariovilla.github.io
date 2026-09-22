@@ -210,6 +210,8 @@ p { font-size: var(--text-base); color: var(--color-text-muted); max-width: 62ch
   display: flex; gap: .35rem .9rem; flex-wrap: wrap; align-items: center;
 }
 .deal-meta strong { color: var(--color-text); }
+.deal-strip { display: flex; gap: .45rem; }
+.deal-strip img { flex: 1 1 0; min-width: 0; height: 110px; object-fit: cover; border-radius: 10px; }
 
 /* ---------- collaborators ---------- */
 .collab-card { display: flex; flex-direction: column; gap: .55rem; transition: border-color .2s ease; }
